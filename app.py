@@ -11,7 +11,7 @@ df = pd.DataFrame({
 
 # Streamlit app
 def main():
-    st.title('Task Recommendation System')
+    st.title('CONTRIBUTE TO NOURISH360 WITH YOUR SKILLS!')  # Change the title here
     selected_skills = st.multiselect('Select skills:', df['Skills'])
     if st.button('Recommend Tasks'):
         recommendations = recommend_tasks(selected_skills)
